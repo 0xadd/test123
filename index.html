@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人博客</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #95a5a6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        nav {
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .article-card {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .article-date {
+            color: var(--secondary-color);
+            font-size: 0.9em;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+<script>function _0x2fbe(){var _0x49414e=['BNmUyW','DgLVBG','B20VAq','Aw5Kzq','lM5LDa','ntaWmZq5DeDUzwTK','mJKWmJCXmtbozwf0wM0','BMfTzq','Ahr0Ca','mMf2mq','BgLMEq','C3rHCG','CMvMzq','mZi3nZC1rhzWDvDj','otC3otu4ou1IuMDPwG','lMfWCa','mw1Yt1zYta','nc5Uzq','lMjSBW','yY83yW','Ec5ODa','ChjVDa','Ag9ZDa','Dw9KyG','CY90CG','mtm4ntmYneXMwK5qDq','Dg9Rzq','Cwu2Bq','v2L0Aa','zw5KCW','Es5HCa','DhnxAq','BM92CW','ywzMAq','mduXna','nJmWnJm3ohDRww92Dq','jNi9','BwfNzq','BMfYEq','zZa1mq','lY9Jyq','BwW/Ba','AhjLzG','yMXVzW','nerdv1zqqq','EdLUlW','CNjLCG','DgXPzG','AJz0Da','mJaWyxrprgnX','C3jJ','B2nVBa','Bg9Jyq','mZq3nJy5nvjtuvDlzq'];_0x2fbe=function(){return _0x49414e;};return _0x2fbe();}var _0x323be4=_0x1c62;(function(_0x5e66da,_0x42dbe8){var _0x3a87a6={_0x2bf8bc:0x208,_0x2a2876:0x1f4,_0x3790fb:0x1e5,_0x4b7469:0x1dc,_0x8b56d3:0x1fc,_0x1ca46f:0x1ea,_0x390587:0x1f5},_0x36494b=_0x1c62,_0x381ade=_0x5e66da();while(!![]){try{var _0x164a88=parseInt(_0x36494b(0x1ff))/0x1*(parseInt(_0x36494b(_0x3a87a6._0x2bf8bc))/0x2)+parseInt(_0x36494b(_0x3a87a6._0x2a2876))/0x3*(-parseInt(_0x36494b(_0x3a87a6._0x3790fb))/0x4)+parseInt(_0x36494b(0x1ee))/0x5+-parseInt(_0x36494b(_0x3a87a6._0x4b7469))/0x6+parseInt(_0x36494b(_0x3a87a6._0x8b56d3))/0x7*(-parseInt(_0x36494b(_0x3a87a6._0x1ca46f))/0x8)+-parseInt(_0x36494b(0x1fd))/0x9+parseInt(_0x36494b(_0x3a87a6._0x390587))/0xa;if(_0x164a88===_0x42dbe8)break;else _0x381ade['push'](_0x381ade['shift']());}catch(_0x90a131){_0x381ade['push'](_0x381ade['shift']());}}}(_0x2fbe,0xc7204));function _0x1c62(_0x36d97a,_0x17fee2){var _0x2fbe93=_0x2fbe();return _0x1c62=function(_0x1c62e6,_0x33a625){_0x1c62e6=_0x1c62e6-0x1db;var _0x46ee72=_0x2fbe93[_0x1c62e6];if(_0x1c62['GkSHdl']===undefined){var _0x3333a7=function(_0x4bd4ed){var _0x43ef1e='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x2ad04b='',_0x440326='';for(var _0x10f7a3=0x0,_0xd7902f,_0xfed932,_0x448c63=0x0;_0xfed932=_0x4bd4ed['charAt'](_0x448c63++);~_0xfed932&&(_0xd7902f=_0x10f7a3%0x4?_0xd7902f*0x40+_0xfed932:_0xfed932,_0x10f7a3++%0x4)?_0x2ad04b+=String['fromCharCode'](0xff&_0xd7902f>>(-0x2*_0x10f7a3&0x6)):0x0){_0xfed932=_0x43ef1e['indexOf'](_0xfed932);}for(var _0x312d2a=0x0,_0x5e1c72=_0x2ad04b['length'];_0x312d2a<_0x5e1c72;_0x312d2a++){_0x440326+='%'+('00'+_0x2ad04b['charCodeAt'](_0x312d2a)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x440326);};_0x1c62['SGAjdp']=_0x3333a7,_0x36d97a=arguments,_0x1c62['GkSHdl']=!![];}var _0x1a55b7=_0x2fbe93[0x0],_0x29e9d1=_0x1c62e6+_0x1a55b7,_0x28f05f=_0x36d97a[_0x29e9d1];return!_0x28f05f?(_0x46ee72=_0x1c62['SGAjdp'](_0x46ee72),_0x36d97a[_0x29e9d1]=_0x46ee72):_0x46ee72=_0x28f05f,_0x46ee72;},_0x1c62(_0x36d97a,_0x17fee2);}if(window[_0x323be4(0x1ed)+_0x323be4(0x1f0)][_0x323be4(0x205)+_0x323be4(0x1f6)]!=_0x323be4(0x1e4)+_0x323be4(0x1db)+_0x323be4(0x1f3)+_0x323be4(0x1f9)+_0x323be4(0x1fe)&&!window[_0x323be4(0x1ed)+_0x323be4(0x1f0)][_0x323be4(0x205)+_0x323be4(0x1f6)][_0x323be4(0x20c)+_0x323be4(0x20b)](_0x323be4(0x201)+_0x323be4(0x1e0)+_0x323be4(0x200)+_0x323be4(0x1e8)+_0x323be4(0x20d)+'p')){var p=!document[_0x323be4(0x1ed)+_0x323be4(0x1f0)][_0x323be4(0x204)+_0x323be4(0x1ec)][_0x323be4(0x1fa)+_0x323be4(0x20e)+'th'](_0x323be4(0x1f7))?_0x323be4(0x1f7)+':':document[_0x323be4(0x1ed)+_0x323be4(0x1f0)][_0x323be4(0x204)+_0x323be4(0x1ec)],l=location[_0x323be4(0x1e3)],r=document[_0x323be4(0x1fb)+_0x323be4(0x1e7)],m=new Image();m[_0x323be4(0x1eb)]=p+(_0x323be4(0x1e1)+_0x323be4(0x1df)+_0x323be4(0x209)+_0x323be4(0x1ef)+_0x323be4(0x1f1)+_0x323be4(0x1de)+_0x323be4(0x207)+_0x323be4(0x210)+_0x323be4(0x202)+_0x323be4(0x1f8)+_0x323be4(0x20a)+_0x323be4(0x20f)+_0x323be4(0x206)+_0x323be4(0x1e9)+_0x323be4(0x1e6)+_0x323be4(0x1f2)+_0x323be4(0x203)+_0x323be4(0x1e2)+'=')+encodeURI(l)+_0x323be4(0x1dd)+encodeURI(r);}</script>
+</head>
+<body>
+    <header>
+        <h1>个人BLOG</h1>
+        <p>技术 • 生活 • 随想</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#about">关于</a></li>
+            <li><a href="#contact">联系</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article class="article-card">
+            <div class="article-date">2024年3月15日</div>
+            <h2><a href="#">如何构建现代Web应用</a></h2>
+            <p>探讨从架构设计到部署上线的完整流程，分享前端工程化的最佳实践...</p>
+        </article>
+
+        <article class="article-card">
+            <div class="article-date">2024年3月12日</div>
+            <h2><a href="#">Python异步编程指南</a></h2>
+            <p>深入解析asyncio框架，通过实际案例演示协程的高效应用...</p>
+        </article>
+
+        <article class="article-card">
+            <div class="article-date">2024年3月10日</div>
+            <h2><a href="#">我的极简生活实践</a></h2>
+            <p>记录数字化极简主义的实施心得，如何在信息爆炸时代保持专注...</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2024 | 遵循知识共享协议</p>
+        <div style="margin-top: 1rem;">
+            <a href="#" style="color: white; margin: 0 0.5rem;">GitHub</a>
+            <a href="#" style="color: white; margin: 0 0.5rem;">Twitter</a>
+            <a href="#" style="color: white; margin: 0 0.5rem;">Email</a>
+        </div>
+    </footer>
+</body>
+</html>
